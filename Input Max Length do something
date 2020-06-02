@@ -1,0 +1,16 @@
+<html>
+  <input id="txtCancel"/>
+</html>
+
+<script>
+$(document).ready(function (){
+  $(document).on('keypress', '#txtCancel', function (e) {
+       debugger
+       var length = this.value.length;
+       if (length >= 50) {
+           e.preventDefault();
+           alert("You are now allowed to encode morethan 50 characters.");
+       }
+   });
+});
+</script>
